@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.6.0" />
+
+	<title>Class GreyDogSystems\Developer\ErrorProvider</title>
+
+	<script type="text/javascript" src="resources/combined.js?428767200"></script>
+	<script type="text/javascript" src="elementlist.js?1599589923"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2495970611" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-GreyDogSystems.html">GreyDogSystems<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-GreyDogSystems.Developer.html">Developer</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-GreyDogSystems.Developer.ErrorProvider.html">ErrorProvider</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-GreyDogSystems.Developer.html" title="Summary of GreyDogSystems\Developer"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class ErrorProvider</h1>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-GreyDogSystems.html">GreyDogSystems</a>\<a href="namespace-GreyDogSystems.Developer.html">Developer</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-GreyDogSystems.Developer.ErrorProvider.html#4" title="Go to source code">ErrorProvider.class.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-GreyDogSystems.Developer.ErrorProvider.html#13" title="Go to source code">__construct</a>( <span>array <var>$aErrorMessages</var></span> )</code>
+
+		<div class="description short">
+			
+<p>The main constructor for the class</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>The main constructor for the class</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$aErrorMessages</var></dt>
+					<dd><code>array</code><br>Error messages stack. This is needed in order to show error messages. If the
+parameter is not an array, the class will not raise any error.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>null</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="ErrorDisplay" id="_ErrorDisplay">
+
+		<td class="attributes"><code>
+			 public 
+			null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ErrorDisplay">#</a>
+		<code><a href="source-class-GreyDogSystems.Developer.ErrorProvider.html#28" title="Go to source code">ErrorDisplay</a>( <span>boolean <var>$bEnabled</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Enables or disables the error messages. The errors will be stored in the
+"errors pool" even if the messages are not shown</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Enables or disables the error messages. The errors will be stored in the
+"errors pool" even if the messages are not shown</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$bEnabled</var></dt>
+					<dd><code>boolean</code><br>Defines if the messages will be shown or not</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>null</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="WithErrors" id="_WithErrors">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_WithErrors">#</a>
+		<code><a href="source-class-GreyDogSystems.Developer.ErrorProvider.html#42" title="Go to source code">WithErrors</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the current error state. If the error pool contains any error, the
+function will return TRUE.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the current error state. If the error pool contains any error, the
+function will return TRUE.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>Status of the current error pool.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="ErrorLookup" id="_ErrorLookup">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ErrorLookup">#</a>
+		<code><a href="source-class-GreyDogSystems.Developer.ErrorProvider.html#51" title="Go to source code">ErrorLookup</a>( <span>object <var>$iErrorCode</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Looks for any incidence of the specified error code.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Looks for any incidence of the specified error code.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$iErrorCode</var></dt>
+					<dd><code>object</code><br>The error code</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>If there is any incidence of the specified error code, the function will return
+true.<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="RaiseError" id="_RaiseError">
+
+		<td class="attributes"><code>
+			 public 
+			null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_RaiseError">#</a>
+		<code><a href="source-class-GreyDogSystems.Developer.ErrorProvider.html#71" title="Go to source code">RaiseError</a>( <span>object <var>$iErrCode</var></span>, <span>string <var>$sErrMSG</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Stores and shows (if enabled) errors</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Stores and shows (if enabled) errors</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$iErrCode</var></dt>
+					<dd><code>object</code><br>The error code that references in the "Messages" array passed to the
+constructor. If the code doesn't exist. The function will raise an "unknown
+error" message</dd>
+					<dt><var>$sErrMSG</var></dt>
+					<dd><code>string</code><br>(Optional) A message to override an standart defined message.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>null</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="ResetErrors" id="_ResetErrors">
+
+		<td class="attributes"><code>
+			 public 
+			null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ResetErrors">#</a>
+		<code><a href="source-class-GreyDogSystems.Developer.ErrorProvider.html#105" title="Go to source code">ResetErrors</a>( )</code>
+
+		<div class="description short">
+			
+<p>Resets the errors pool and clears the "WithErrors" state</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Resets the errors pool and clears the "WithErrors" state</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>null</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="GetErrorsPool" id="_GetErrorsPool">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_GetErrorsPool">#</a>
+		<code><a href="source-class-GreyDogSystems.Developer.ErrorProvider.html#115" title="Go to source code">GetErrorsPool</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the current errors pool</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the current errors pool</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>The current errors pool<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.6.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
